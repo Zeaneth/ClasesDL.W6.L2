@@ -4,5 +4,5 @@
 #  puts i
 #end
 
-i = 'Hola :) '
-10.times {puts i}
+i = 0
+10.times {puts i+=1}
