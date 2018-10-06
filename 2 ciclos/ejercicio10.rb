@@ -11,7 +11,6 @@
 #}
 
 
-#Fuente = https://stackoverflow.com/questions/14696944/how-do-i-create-line-breaks-in-ruby
 opcion = gets.chomp.to_i
 while opcion != 4
     puts 'Opción 1: blah'
