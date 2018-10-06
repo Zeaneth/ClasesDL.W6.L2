@@ -24,3 +24,28 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+def tabla
+	indent = "  "
+  puts "<table>"
+  puts "<tbody>"
+	puts "#{indent}<tr>"
+  4.times do |i|  
+    puts "#{indent*2}<td> #{i+1} </td>"
+  end
+  puts "#{indent}</tr>"
+  puts "#{indent}<tr>"
+  4.times do |i|   
+    puts "#{indent*2}<td> #{i+5} </td>"
+  end
+  puts "#{indent}</tr>"
+  puts "#{indent}<tr>"
+  4.times do |i|   
+    puts "#{indent*2}<td> #{i+9} </td>"
+  end
+	puts "#{indent}</tr>"
+	puts "#{indent}</tbody>" #asumo que en el ejemplo querían cerra la tabla, no ponen /
+	puts "</table>"
+end
+
+tabla
